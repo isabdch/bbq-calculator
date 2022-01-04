@@ -1,0 +1,77 @@
+@font-face {
+    font-family: myFont;
+    src: url('./font/Spinnaker-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+
+body {
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    position: fixed;
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+section {
+    width: 30%;
+    height: 300px;
+    margin-left: 150px;
+    margin-top: 100px;
+    display: inline-block;
+    border-radius: 35px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(252, 250, 217);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 10px rgb(46, 41, 41);
+    margin-bottom: 20px;
+    
+}
+
+input[type="number"] {
+    margin-top: 28px;
+    padding: 14px;
+    padding-left: 13px;
+    width: 400px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    background-color: rgb(252, 250, 217);
+}
+
+input[type="number"]::placeholder {
+    color: rgb(196, 194, 157);
+}
+
+input[type="submit"] {
+    margin-top: 28px;
+    padding: 14px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(87, 83, 83);
+    color: rgb(252, 250, 217);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
