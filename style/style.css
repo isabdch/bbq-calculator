@@ -74,4 +74,10 @@ input[type="submit"] {
     color: rgb(252, 250, 217);
     font-size: 0.9rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+input[type="submit"]:hover {
+    background-color: rgb(124, 120, 120);
+}
+
