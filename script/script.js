@@ -45,4 +45,10 @@ function calculate() {
     let drinksFlOz = dontDrinkV * 50.72 + (25.36 * kidsV);
     let drinksL = dontDrinkV * 1.5 + (0.75 * kidsV);
   }
+
+  let p1 = document.createElement("p");
+  p1.classList.add("meatP");
+  result.appendChild(p1);
+  p1.innerText = ""
+
 }
