@@ -11,6 +11,7 @@ let dontDrink = document.getElementById("dontDrink");
 let hours = document.getElementById("nHours");
 let calcButton = document.getElementById("calcButton");
 let result = document.getElementById("result");
+let container = document.getElementsByClassName("container")[0];
 
 // add events to the elements
 calcButton.addEventListener("click", calculate);
@@ -45,6 +46,8 @@ function calculate() {
     let drinksFlOz = dontDrinkV * 50.72 + (25.36 * kidsV);
     let drinksL = dontDrinkV * 1.5 + (0.75 * kidsV);
   }
+
+  container.style.display = "none";
 
   let p1 = document.createElement("p");
   p1.classList.add("meatP");
