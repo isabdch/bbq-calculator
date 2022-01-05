@@ -9,15 +9,17 @@
     <script src="./script/script.js" defer></script>
     <link href="./style/style.css" rel="stylesheet">
     <link href="./images/fork.png" rel="icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 
 <body>
     <a href="https://github.com/isabdch" target="_blank"><img src="./images/github.png" height="23px"></a>
     <div class="container">
-        <h1><img src="images/bbq.png" height="200px"></h1>
+        <h1><img id="bbqImg" src="images/bbq.png"></h1>
         <input id="nAdults" type="number" placeholder="Number of adults" min="0" title="Number of adults">
         <input id="nKids" type="number" placeholder="Number of kids" min="0" title="Number of kids">
-        <input id="dontDrink" type="number" placeholder="Number of adults who don't drink alcohol" min="0" title="Number of adults who don't drink alcohol">
+        <input id="dontDrink" type="number" placeholder="Number of adults who don't drink alcohol" min="0"
+            title="Number of adults who don't drink alcohol">
         <input id="nHours" type="number" placeholder="Duration in hours" min="0" title="Duration in hours"><br>
         <button id="calcButton">Calculate</button>
     </div>

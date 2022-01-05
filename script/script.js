@@ -24,34 +24,73 @@ function calculate() {
 
   // meat
   if (hours.value < 6) {
-    let meatLb = adultsV * 0.88 + (0.44 * kidsV);
-    let meatKg = adultsV * 0.4 + (0.2 * kidsV);
+    var meatLb = adultsV * 0.88 + 0.44 * kidsV;
+    var meatKg = adultsV * 0.4 + 0.2 * kidsV;
   } else {
-    let meatLb = adultsV * 1.54 + (0.77 * kidsV);
-    let meatKg = adultsV * 0.7 + (0.35 * kidsV);
+    var meatLb = adultsV * 1.54 + 0.77 * kidsV;
+    var meatKg = adultsV * 0.7 + 0.35 * kidsV;
   }
 
   // beer
   if (hours.value < 6) {
-    let beer = (adultsV - dontDrinkV) * 3;
+    var beer = (adultsV - dontDrinkV) * 3;
   } else {
-    let beer = (adultsV - dontDrinkV) * 5;
+    var beer = (adultsV - dontDrinkV) * 5;
   }
 
   // drinks
   if (hours.value < 6) {
-    let drinksFlOz = dontDrinkV * 33.81 + (16.90 * kidsV);
-    let drinksL = dontDrinkV * 1 + (0.5 * kidsV);
+    var drinksFlOz = dontDrinkV * 33.81 + 16.9 * kidsV;
+    var drinksL = dontDrinkV * 1 + 0.5 * kidsV;
   } else {
-    let drinksFlOz = dontDrinkV * 50.72 + (25.36 * kidsV);
-    let drinksL = dontDrinkV * 1.5 + (0.75 * kidsV);
+    var drinksFlOz = dontDrinkV * 50.72 + 25.36 * kidsV;
+    var drinksL = dontDrinkV * 1.5 + 0.75 * kidsV;
   }
 
   container.style.display = "none";
+  result.style.display = "inline-block";
 
-  let p1 = document.createElement("p");
-  p1.classList.add("meatP");
-  result.appendChild(p1);
-  p1.innerText = ""
+  let title = document.createElement("h2");
+  title.classList.add("title");
+  result.appendChild(title);
+  title.innerText = "You will need:";
 
+  let meat = document.createElement("span");
+  meat.classList.add("meat");
+  result.appendChild(meat);
+  meat.innerHTML =
+    "<img class='foodLogo' src='images/meat.png' alt='meat logo' height='20px'>" +
+    meatLb.toFixed(2) +
+    "lb (" +
+    meatKg.toFixed(2) +
+    "kg) of meat.";
+
+  let beerR = document.createElement("span");
+  beerR.classList.add("beerR");
+  result.appendChild(beerR);
+  beerR.innerHTML =
+    "<img class='foodLogo' src='images/beer.png' alt='beer logo' height='20px'>" +
+    beer +
+    " cans (12 fl oz/355ml each can) of beer.";
+
+  let drinks = document.createElement("span");
+  drinks.classList.add("drinks");
+  result.appendChild(drinks);
+  drinks.innerHTML =
+    "<img class='foodLogo' src='images/juice.png' alt='juice logo' height='20px'>" +
+    drinksFlOz.toFixed(2) +
+    " fl oz (" +
+    drinksL.toFixed(2) +
+    "l) of drink of your choice for those who don't drink alcohol.";
+
+  let backBtn = document.createElement("button");
+  backBtn.classList.add("backBtn");
+  result.appendChild(backBtn);
+  backBtn.innerHTML = "<i class='fi fi-rr-undo-alt'></i>";
+
+  backBtn.addEventListener("click", goBack);
+}
+
+function goBack() {
+  window.location.reload(true);
 }

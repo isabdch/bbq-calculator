@@ -1,11 +1,11 @@
 @font-face {
     font-family: myFont;
-    src: url('./font/Spinnaker-Regular.ttf');
+    src: url('./font/Nunito-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: myOtherFont;
-    src: url('./font/hotpizza.ttf');
+    src: url('./font/BuffaloChicken-gA8P.ttf');
 }
 
 * {
@@ -26,6 +26,7 @@ a {
     position: fixed;
     opacity: 0.5;
     left: 0;
+    top: 0;
     margin-left: 10px;
     margin-top: 10px;
     transition: all 0.4s ease;
@@ -38,7 +39,7 @@ a:hover {
 .container {
     width: 30%;
     height: 300px;
-    margin-top: 13px;
+    margin-top: 20px;
     display: inline-block;
     border-radius: 35px;
     text-align: center;
@@ -46,6 +47,10 @@ a:hover {
 
 h1 {
     margin-bottom: 10px;
+}
+
+#bbqImg {
+    height: 190px;
 }
 
 input {
@@ -59,7 +64,7 @@ input {
     outline: none;
     font-size: 0.9rem;
     background-color: rgb(252, 250, 217);
-    box-shadow: 0px 2px 13px rgb(32, 30, 30);
+    box-shadow: 0px 4px 1px rgb(32, 30, 30);
 }
 
 input::placeholder {
@@ -93,4 +98,33 @@ button:hover {
 button:active {
     box-shadow: none;
     margin-top: 4px;
+}
+
+#result {
+    margin-top: 120px;
+    display: none;
+}
+
+h2 {
+    color: rgb(252, 250, 217);
+    font-size: 3.3rem;
+    font-family: myOtherFont;
+    text-shadow: 4px 4px 0px rgb(153, 8, 8);
+    margin-bottom: 10px;
+}
+
+span {
+    background-color: rgb(252, 250, 217);
+    display: block;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    box-shadow: 0px 4px 1px rgb(32, 30, 30);
+}
+
+.foodLogo {
+    margin-right: 10px;    
 }
