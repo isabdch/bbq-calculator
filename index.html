@@ -16,17 +16,20 @@
     <a href="https://github.com/isabdch" target="_blank"><img src="./images/github.png" height="23px"></a>
     <div class="container">
         <h1><img id="bbqImg" src="images/bbq.png"></h1>
-        <input id="nAdults" type="number" placeholder="Number of adults" min="0" title="Number of adults"><button
-            class="x" id="btnRemoveAdults"><i class="fi fi-rr-cross-small"></i></button>
-        <input id="nKids" type="number" placeholder="Number of kids" min="0" title="Number of kids"><button class="x" id="btnRemoveKids"><i
-                class="fi fi-rr-cross-small"></i></button>
-        <input id="dontDrink" type="number" placeholder="Number of adults who don't drink alcohol" min="0"
-            title="Number of adults who don't drink alcohol"><button class="x" id="btnRemoveDontDrink"><i
-                class="fi fi-rr-cross-small"></i></button>
-        <input id="nHours" type="number" placeholder="Duration in hours" min="0" title="Duration in hours"><button
-            class="x" id="btnRemoveHours"><i class="fi fi-rr-cross-small"></i></button>
+        <div class="divC">
+            <input id="nAdults" type="number" placeholder="Number of adults" min="0" title="Number of adults"><button
+                class="x" id="btnRemoveAdults"><i class="fi fi-rr-cross"></i></button></div>
+        <div class="divC">
+            <input id="nKids" type="number" placeholder="Number of kids" min="0" title="Number of kids"><button
+                class="x" id="btnRemoveKids"><i class="fi fi-rr-cross"></i></button></div>
+        <div class="divC">
+            <input id="dontDrink" type="number" placeholder="Number of adults who don't drink alcohol" min="0"
+                title="Number of adults who don't drink alcohol"><button class="x" id="btnRemoveDontDrink"><i
+                    class="fi fi-rr-cross"></i></button></div>
+        <div class="divC">
+            <input id="nHours" type="number" placeholder="Duration in hours" min="0" title="Duration in hours"><button
+                class="x" id="btnRemoveHours"><i class="fi fi-rr-cross"></i></button></div>
         <button id="calcButton">Calculate</button>
-        <button class="trash"><i class="fi fi-rr-trash"></i></button>
     </div>
     <div id="result"></div>
 </body>

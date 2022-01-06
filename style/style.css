@@ -71,30 +71,26 @@ input::placeholder {
     color: rgb(182, 180, 148);
 }
 
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-
 .x {
     cursor: pointer;
-    background-color: rgb(87, 83, 83);
-    color: rgb(252, 250, 217);
-    box-shadow: 0px 3px 3px rgb(32, 30, 30);
-    font-size: 0.9rem;
-    margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(252, 250, 217, 0.671);
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-top: 15px;
     border: none;
-    border-radius: 2px;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
     transition: all 0.2s ease;
+    position: absolute;
 }
 .x:hover {
-    background-color: rgb(124, 120, 120);
+    color: rgb(199, 40, 40);
 }
 
+.x:active {
+    color: rgb(252, 250, 217);
+}
 
-#calcButton, .backBtn, .trash {
+#calcButton, .backBtn {
     padding: 15px;
     border-radius: 2px;
     padding-left: 50px;
@@ -110,18 +106,14 @@ input::-webkit-inner-spin-button {
     font-size: 0.9rem;
 }
 
-#calcButton:hover, .backBtn:hover, .trash:hover {
+#calcButton:hover, .backBtn:hover {
     background-color: rgb(124, 120, 120);
 }
 
-#calcButton:active, .backBtn:active, .trash:active {
+#calcButton:active, .backBtn:active {
     box-shadow: none;
     margin-top: 4px;
-}
-
-.trash {
-    padding-left: 20px;
-    padding-right: 20px;
+    background-color: rgb(87, 83, 83);
 }
 
 #result {

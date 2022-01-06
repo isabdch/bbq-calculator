@@ -16,16 +16,16 @@ let btnRemoveAdults = document.getElementById("btnRemoveAdults");
 let btnRemoveKids = document.getElementById("btnRemoveKids");
 let btnRemoveDontDrink = document.getElementById("btnRemoveDontDrink");
 let btnRemoveHours = document.getElementById("btnRemoveHours");
-let trashBtn = document.getElementsByClassName("trash")[0];
 
 // add events to the elements
 calcButton.addEventListener("click", calculate);
-window.addEventListener("DOMContentLoaded", (event) => {getLocalStorage()});
+window.addEventListener("DOMContentLoaded", (event) => {
+  getLocalStorage();
+});
 btnRemoveAdults.addEventListener("click", removeAdultsLS);
 btnRemoveKids.addEventListener("click", removeKidsLS);
 btnRemoveDontDrink.addEventListener("click", removeDontDrinkLS);
 btnRemoveHours.addEventListener("click", removeHoursLS);
-trashBtn.addEventListener("click", removeAll);
 
 // functions
 function calculate() {
@@ -116,7 +116,7 @@ function goBack() {
 }
 //
 
-function getLocalStorage() {  
+function getLocalStorage() {
   let adultsLs = JSON.parse(localStorage.getItem("adultsLS"));
   let kidsLs = JSON.parse(localStorage.getItem("kidsLS"));
   let dontDrinkLs = JSON.parse(localStorage.getItem("dontDrinkLS"));
@@ -129,34 +129,27 @@ function getLocalStorage() {
 }
 //
 
-function removeAdultsLS() {  
+function removeAdultsLS() {
   localStorage.removeItem("adultsLS");
   adults.value = "";
 }
 //
 
-function removeKidsLS() {  
+function removeKidsLS() {
   localStorage.removeItem("kidsLS");
   kids.value = "";
 }
 //
 
-function removeDontDrinkLS() {  
+function removeDontDrinkLS() {
   localStorage.removeItem("dontDrinkLS");
   dontDrink.value = "";
 }
 //
 
-function removeHoursLS() {  
+function removeHoursLS() {
   localStorage.removeItem("hoursLS");
   hours.value = "";
 }
 //
 
-function removeAll() {  
-  localStorage.clear();
-  adults.value = "";
-  kids.value = "";
-  dontDrink.value = "";
-  hours.value = "";
-}
