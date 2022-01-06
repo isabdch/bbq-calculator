@@ -114,7 +114,7 @@ function calculate() {
     drinksFlOz.toFixed(2) +
     " fl oz (" +
     drinksL.toFixed(2) +
-    "l) of drink of your choice for those who don't want to drink alcohol.";
+    "l) of drink of your choice for those who don't drink alcohol.";
 
   let backBtn = document.createElement("button");
   backBtn.classList.add("backBtn");

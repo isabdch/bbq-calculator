@@ -75,6 +75,10 @@ input::placeholder {
     color: rgb(182, 180, 148);
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
 .x {
     padding: 13px;
     cursor: pointer;
