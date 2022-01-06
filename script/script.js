@@ -15,15 +15,23 @@ let container = document.getElementsByClassName("container")[0];
 
 // add events to the elements
 calcButton.addEventListener("click", calculate);
+window.addEventListener("DOMContentLoaded", (event) => {getLocalStorage()});
 
 // functions
 function calculate() {
   let adultsV = adults.value;
   let kidsV = kids.value;
   let dontDrinkV = dontDrink.value;
+  let hoursV = hours.value;
 
-  // meat
-  if (hours.value < 6) {
+  // local storage
+  localStorage.setItem("adultsLS", JSON.stringify(adultsV));
+  localStorage.setItem("kidsLS", JSON.stringify(kidsV));
+  localStorage.setItem("dontDrinkLS", JSON.stringify(dontDrinkV));
+  localStorage.setItem("hoursLS", JSON.stringify(hoursV));
+
+  // meat calculation
+  if (hoursV < 6) {
     var meatLb = adultsV * 0.88 + 0.44 * kidsV;
     var meatKg = adultsV * 0.4 + 0.2 * kidsV;
   } else {
@@ -31,15 +39,15 @@ function calculate() {
     var meatKg = adultsV * 0.7 + 0.35 * kidsV;
   }
 
-  // beer
-  if (hours.value < 6) {
+  // beer calculation
+  if (hoursV < 6) {
     var beer = (adultsV - dontDrinkV) * 3;
   } else {
     var beer = (adultsV - dontDrinkV) * 5;
   }
 
-  // drinks
-  if (hours.value < 6) {
+  // drinks calculation
+  if (hoursV < 6) {
     var drinksFlOz = dontDrinkV * 33.81 + 16.9 * kidsV;
     var drinksL = dontDrinkV * 1 + 0.5 * kidsV;
   } else {
@@ -93,4 +101,16 @@ function calculate() {
 
 function goBack() {
   window.location.reload(true);
+}
+
+function getLocalStorage() {  
+  let adultsLs = JSON.parse(localStorage.getItem("adultsLS"));
+  let kidsLs = JSON.parse(localStorage.getItem("kidsLS"));
+  let dontDrinkLs = JSON.parse(localStorage.getItem("dontDrinkLS"));
+  let hoursLs = JSON.parse(localStorage.getItem("hoursLS"));
+
+  adults.value = adultsLs;
+  kids.value = kidsLs;
+  dontDrink.value = dontDrinkLs;
+  hours.value = hoursLs;
 }
