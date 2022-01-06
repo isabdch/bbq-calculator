@@ -49,11 +49,20 @@ function calculate() {
     var meatKg = adultsV * 0.7 + 0.35 * kidsV;
   }
 
+  if (meatKg < 0 && meatLb < 0) {
+    meatKg = 0;
+    meatLb = 0;
+  }
+
   // beer calculation
   if (hoursV < 6) {
     var beer = (adultsV - dontDrinkV) * 3;
   } else {
     var beer = (adultsV - dontDrinkV) * 5;
+  }
+
+  if (beer < 0) {
+    beer = 0;
   }
 
   // drinks calculation
@@ -63,6 +72,11 @@ function calculate() {
   } else {
     var drinksFlOz = dontDrinkV * 50.72 + 25.36 * kidsV;
     var drinksL = dontDrinkV * 1.5 + 0.75 * kidsV;
+  }
+
+  if (drinksFlOz < 0 && drinksL < 0) {
+    drinksFlOz = 0;
+    drinksL = 0;
   }
 
   // create the result elements
@@ -152,4 +166,3 @@ function removeHoursLS() {
   hours.value = "";
 }
 //
-

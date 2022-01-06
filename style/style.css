@@ -16,9 +16,12 @@
 }
 
 body {
-    background-image: url('../images/wallpaper\ 2.png');
+    background-color: rgb(153, 8, 8);
+    background-image: url('../images/wallpaper.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -37,11 +40,8 @@ a:hover {
 }
 
 .container {
-    width: 40%;
-    height: 300px;
+    width: 100%;
     margin-top: 18px;
-    display: inline-block;
-    border-radius: 35px;
     text-align: center;
 }
 
@@ -53,18 +53,22 @@ h1 {
     height: 190px;
 }
 
-input {
-    text-align: center;
-    margin-bottom: 28px;
-    padding: 15px;
-    padding-left: 13px;
-    width: 380px;
-    border-radius: 2px;
+.divC {
     border: none;
     outline: none;
     font-size: 0.9rem;
+}
+
+input {
+    padding: 13px;
+    width: 40%;
+    margin-bottom: 28px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    outline: none;
+    font-size: 0.9rem;
     background-color: rgb(252, 250, 217);
-    box-shadow: 0px 3px 3px rgb(32, 30, 30);
 }
 
 input::placeholder {
@@ -72,29 +76,27 @@ input::placeholder {
 }
 
 .x {
+    padding: 13px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
-    color: rgba(252, 250, 217, 0.671);
-    font-size: 1.2rem;
-    margin-left: 10px;
-    margin-top: 15px;
+    background-color: rgb(252, 250, 217);
+    color: rgb(182, 180, 148);
+    font-size: 0.9rem;
     border: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     transition: all 0.2s ease;
-    position: absolute;
 }
+
 .x:hover {
-    color: rgb(199, 40, 40);
+    color: rgb(221, 25, 25);
 }
 
-.x:active {
-    color: rgb(252, 250, 217);
-}
 
-#calcButton, .backBtn {
-    padding: 15px;
+#calcButton,
+.backBtn {
+    padding: 13px;
     border-radius: 2px;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 15%;
     border: none;
     outline: none;
     background-color: rgb(87, 83, 83);
@@ -106,18 +108,24 @@ input::placeholder {
     font-size: 0.9rem;
 }
 
-#calcButton:hover, .backBtn:hover {
+.backBtn {
+    width: 25%;
+}
+
+#calcButton:hover,
+.backBtn:hover {
     background-color: rgb(124, 120, 120);
 }
 
-#calcButton:active, .backBtn:active {
+#calcButton:active,
+.backBtn:active {
     box-shadow: none;
     margin-top: 4px;
     background-color: rgb(87, 83, 83);
 }
 
 #result {
-    margin-top: 120px;
+    margin-top: 130px;
     display: none;
 }
 
@@ -130,15 +138,15 @@ h2 {
 }
 
 span {
-    width: 380px;
+    padding: 13px;
+    width: 100%;
+    margin-bottom: 28px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-size: 0.9rem;
     background-color: rgb(252, 250, 217);
     display: block;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 25px;
-    border-radius: 2px;
-    box-shadow: 0px 3px 3px rgb(32, 30, 30);
     text-align: left;
 }
 
@@ -146,3 +154,11 @@ span {
     float: left;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 700px) {
+
+  
+
+
+
+}    
