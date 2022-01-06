@@ -12,10 +12,20 @@ let hours = document.getElementById("nHours");
 let calcButton = document.getElementById("calcButton");
 let result = document.getElementById("result");
 let container = document.getElementsByClassName("container")[0];
+let btnRemoveAdults = document.getElementById("btnRemoveAdults");
+let btnRemoveKids = document.getElementById("btnRemoveKids");
+let btnRemoveDontDrink = document.getElementById("btnRemoveDontDrink");
+let btnRemoveHours = document.getElementById("btnRemoveHours");
+let trashBtn = document.getElementsByClassName("trash")[0];
 
 // add events to the elements
 calcButton.addEventListener("click", calculate);
 window.addEventListener("DOMContentLoaded", (event) => {getLocalStorage()});
+btnRemoveAdults.addEventListener("click", removeAdultsLS);
+btnRemoveKids.addEventListener("click", removeKidsLS);
+btnRemoveDontDrink.addEventListener("click", removeDontDrinkLS);
+btnRemoveHours.addEventListener("click", removeHoursLS);
+trashBtn.addEventListener("click", removeAll);
 
 // functions
 function calculate() {
@@ -55,6 +65,7 @@ function calculate() {
     var drinksL = dontDrinkV * 1.5 + 0.75 * kidsV;
   }
 
+  // create the result elements
   container.style.display = "none";
   result.style.display = "inline-block";
 
@@ -98,10 +109,12 @@ function calculate() {
 
   backBtn.addEventListener("click", goBack);
 }
+//
 
 function goBack() {
   window.location.reload(true);
 }
+//
 
 function getLocalStorage() {  
   let adultsLs = JSON.parse(localStorage.getItem("adultsLS"));
@@ -113,4 +126,37 @@ function getLocalStorage() {
   kids.value = kidsLs;
   dontDrink.value = dontDrinkLs;
   hours.value = hoursLs;
+}
+//
+
+function removeAdultsLS() {  
+  localStorage.removeItem("adultsLS");
+  adults.value = "";
+}
+//
+
+function removeKidsLS() {  
+  localStorage.removeItem("kidsLS");
+  kids.value = "";
+}
+//
+
+function removeDontDrinkLS() {  
+  localStorage.removeItem("dontDrinkLS");
+  dontDrink.value = "";
+}
+//
+
+function removeHoursLS() {  
+  localStorage.removeItem("hoursLS");
+  hours.value = "";
+}
+//
+
+function removeAll() {  
+  localStorage.clear();
+  adults.value = "";
+  kids.value = "";
+  dontDrink.value = "";
+  hours.value = "";
 }

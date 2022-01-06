@@ -37,7 +37,7 @@ a:hover {
 }
 
 .container {
-    width: 30%;
+    width: 40%;
     height: 300px;
     margin-top: 18px;
     display: inline-block;
@@ -75,8 +75,26 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+.x {
+    cursor: pointer;
+    background-color: rgb(87, 83, 83);
+    color: rgb(252, 250, 217);
+    box-shadow: 0px 3px 3px rgb(32, 30, 30);
+    font-size: 0.9rem;
+    margin-left: 5px;
+    border: none;
+    border-radius: 2px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.2s ease;
+}
+.x:hover {
+    background-color: rgb(124, 120, 120);
+}
 
-button {
+
+#calcButton, .backBtn, .trash {
     padding: 15px;
     border-radius: 2px;
     padding-left: 50px;
@@ -89,15 +107,21 @@ button {
     cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0px 4px 1px rgb(0, 0, 0);
+    font-size: 0.9rem;
 }
 
-button:hover {
+#calcButton:hover, .backBtn:hover, .trash:hover {
     background-color: rgb(124, 120, 120);
 }
 
-button:active {
+#calcButton:active, .backBtn:active, .trash:active {
     box-shadow: none;
     margin-top: 4px;
+}
+
+.trash {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #result {
