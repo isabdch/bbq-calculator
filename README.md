@@ -12,7 +12,6 @@
 
 - [Project Description](#project-description)
 - [Status](#status)
-- [Inspiration](#inspiration)
 
 ## ✏️ Project Description
 
