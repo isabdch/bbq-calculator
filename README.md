@@ -4,6 +4,8 @@
 ![](https://img.shields.io/github/languages/count/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
 ![](https://img.shields.io/github/repo-size/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
 ![](https://img.shields.io/github/issues/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
+![](https://img.shields.io/github/stars/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
+![](https://img.shields.io/github/license/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
 
 ## [SITE HERE](https://isabdch.github.io/bbq-calculator/)
 ![](images/barbecue-calculator.png)
