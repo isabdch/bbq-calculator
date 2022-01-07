@@ -1,7 +1,6 @@
 # Barbecue Calculator Website
 
 ## [SITE HERE](https://isabdch.github.io/bbq-calculator/)
-<img src="https://media.giphy.com/media/FPTYIWICCIAM7bFOnv/giphy.gif" height="500px">
 
 ## Table of Contents
 
