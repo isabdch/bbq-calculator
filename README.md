@@ -8,13 +8,13 @@
 ## [SITE HERE](https://isabdch.github.io/bbq-calculator/)
 ![](images/barbecue-calculator.png)
 
-## Table of Contents
+## 📖 Table of Contents
 
 - [Project Description](#project-description)
 - [Status](#status)
 - [Inspiration](#inspiration)
 
-## Project Description
+## ✏️ Project Description
 
 This website's purpose is to calculate the amount of meat, beer, and any other drink you will need to make a barbecue depending on the number of adults, kids, adults who don't drink alcohol and the duration of the barbecue (in hours).
 
@@ -32,6 +32,6 @@ Project is created with:
 
   I created multiple events and functions to make all the calculations and the interactivity. I also used localStorage to save the data.
 
-## Status
+## ⏱️ Status
 
 This project is finished. 
