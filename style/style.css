@@ -61,7 +61,7 @@ h1 {
 
 input {
     padding: 13px;
-    width: 40%;
+    width: 35%;
     margin-bottom: 28px;
     border: none;
     border-top-left-radius: 2px;
@@ -100,7 +100,7 @@ input[type=number]::-webkit-inner-spin-button {
 .backBtn {
     padding: 13px;
     border-radius: 2px;
-    width: 15%;
+    width: 13%;
     border: none;
     outline: none;
     background-color: rgb(87, 83, 83);
