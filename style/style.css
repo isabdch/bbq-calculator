@@ -85,7 +85,7 @@ input[type=number]::-webkit-inner-spin-button {
     cursor: pointer;
     background-color: rgb(252, 250, 217);
     color: rgb(182, 180, 148);
-    box-shadow: 6px 3px 5px rgb(0, 0, 0);
+    box-shadow: 2px 3px 5px rgb(0, 0, 0);
     font-size: 0.9rem;
     border: none;
     border-top-right-radius: 2px;
