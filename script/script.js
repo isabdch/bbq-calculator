@@ -119,7 +119,7 @@ function calculate() {
   let backBtn = document.createElement("button");
   backBtn.classList.add("backBtn");
   result.appendChild(backBtn);
-  backBtn.innerHTML = "<i class='fi fi-rr-undo-alt'></i>";
+  backBtn.innerHTML = "<i class='fa-regular fa-arrow-turn-down-left'></i>";
 
   backBtn.addEventListener("click", goBack);
 }
