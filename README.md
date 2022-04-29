@@ -8,7 +8,7 @@
 ![](https://img.shields.io/github/license/isabdch/bbq-calculator?color=%23990808&style=for-the-badge)
 
 ## [SITE HERE](https://isabdch.github.io/bbq-calculator/)
-![](images/barbecue-calculator.png)
+![](/github/gif-readme.gif)
 
 ## 📖 Table of Contents
 
@@ -36,3 +36,7 @@ Project is created with:
 ## ⏱️ Status
 
 This project is finished. 
+
+---
+
+Made with 💜 by Isabelle Brandão 👋 [See my LinkedIn](https://www.linkedin.com/in/isabelle-brand%C3%A3o-5645551a8/)
