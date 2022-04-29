@@ -19,7 +19,7 @@
 
 ## ✏️ Project Description
 
-This website's purpose is to calculate the amount of meat, beer, and any other drink you will need to make a barbecue depending on the number of adults, kids, adults who don't drink alcohol and the duration of the barbecue (in hours).
+BBQ Calculator calculates the amount of meat, beer, and any other drink you will need to make a barbecue depending on the number of adults, kids, adults who don't drink alcohol and the duration of the barbecue (in hours).
 
 Project is created with:
 
